@@ -1,0 +1,54 @@
+18.06.2023 Version 0.6 - nur für erfahrene Personen
+
+----------------------
+
+Phyton 
+	Download der Python-Umgebung über https://www.python.org/downloads/
+	Installation des Setups "python-3.11.4-amd64.exe" (oder neuer, wenn verfügbar)
+
+MS-Access (aktuelle Datenbank, Sqlite geplant) 
+
+	Python-Erweiterung für den Zugriff auf MS Access-Datenbanken via OCBC:
+	- cmd-Fenster öffnen
+	- "py" eingeben, um zu prüfen, ob die Installation erfolgreich war
+	  -> Ausgabe "Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32..."
+	- "exit()", um Python wieder zu verlassen.
+
+	- "pip install pyodbc" eingeben
+  	-> die aktuelle Version wird geladen und installiert. Am Ende wird angezeigt "Successfully installed pyodbc-4.0.39"
+	- cmd-Fenster schließen
+
+Visual Studio Code 
+
+	Download der IDE "Visual Studio Code" von Microsoft über https://code.visualstudio.com/download
+	Installation des Setups "VSCodeUserSetup-x64-1.79.2.exe" (oder neuer, wenn verfügbar)
+	(gibt natürlich auch andere Entwicklungsumgebungen)
+
+	Installation verschiedener Extensions zu / in VS Code
+	- Python v2023.10.1
+	- Pylance v2023.6.20
+	- Jupyter v2023.5.1001582324
+	- ggf. werden weitere Module erforderlich, die nach Bestätigung der Abfrage automatisch installiert werden
+
+Flex Queries 
+
+	FlexQueries als XML in der IB-Kontoverwaltung anlegen:
+	- Transaktionen / Trades
+	- Kapitalflussrechnung / Statement of Funds
+	Es sollen jeweils alle Felder ausgegeben werden, auch wenn für den Moment nicht 
+	alle in der nachfolgenden Verarbeitung angesprochen werden. 
+	Ansonsten sollen keine Veränderungen gegenüber den Standard-Vorgaben von IB vorgenommen werden.
+	Ausgabeformat ist XML, da sich dieses am leichtesten von den Python-Scripts parsen lässt. 
+	Der konfigurierte Zeitraum ist egal, da dieser beim späteren Download jeweils abweichend ausgewählt werden kann.
+
+	Das automatische Runterladen ist ebenfalls geplant 
+
+Nutzung des Programms 
+
+	Vorbereitungen für die Nutzung des Programms:
+	- Verzeichnis anlegen, z.B. "IB-Daten"
+	- die leere MS Access-Datenbank dorthin kopieren  (solange noch keine andere DB wie SQLlite verwendet wird)
+	- die (derzeit) drei Python-Scripte für das 
+   	Laden und Verarbeiten der Trades und der Kapitalflussrechnung sowie 
+	für die "Verheiratung" der Daten zu einem Depot in das Verzeichnis legen
+
