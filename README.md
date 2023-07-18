@@ -1,6 +1,8 @@
 # ib-tax
 Interactive Broker Auswertung der deutschen Steuer (Work in Progress) 
 
+18.07.2023 !!! Hinweis: das ist hier alles "Work in Progress", noch keine lauffähige Version
+
 Aktuelles Konzept 
 
 Ausgangsbasis : Trades + Statments in XML (via Flex Reports)
