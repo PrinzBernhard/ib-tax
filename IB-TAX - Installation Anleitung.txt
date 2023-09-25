@@ -39,6 +39,7 @@ Flex Queries
 	alle in der nachfolgenden Verarbeitung angesprochen werden. 
 	Ansonsten sollen keine Veränderungen gegenüber den Standard-Vorgaben von IB vorgenommen werden.
 	Ausgabeformat ist XML, da sich dieses am leichtesten von den Python-Scripts parsen lässt. 
+	Wichtig! Datumsformat: yyyy-MM-dd, Zeitformat HH:mm:ss, Datum/Uhrzeit-Trennzeichen '' (Leerzeichen)
 	Der konfigurierte Zeitraum ist egal, da dieser beim späteren Download jeweils abweichend ausgewählt werden kann.
 
 	Das automatische Runterladen ist ebenfalls geplant 
